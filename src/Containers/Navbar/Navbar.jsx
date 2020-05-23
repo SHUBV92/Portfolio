@@ -2,8 +2,8 @@ import React from "react";
 
 import {
   Container,
-  Intro
-} from "./Intro.styles.jsx";
+  Nav
+} from "./Nav.styles.jsx";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -12,15 +12,19 @@ import {
   faMenorah
 } from "@fortawesome/free-solid-svg-icons";
 
-const Introduction = () => {
+const Navbar = () => {
+
+    let navRoutes = ["SUMMARY", "SKILLS", "PROJECTS", 'ARTICLES', "GET IN TOUCH"]
   return (
     <Container>
-      <Intro>
-        <h1>Shubinder Virk</h1>
-        <p>A Full stack engineer who loves writing code and making it human readable</p>
-      </Intro>
+    <Nav>
+        {navRoutes.map(x => {            
+        return <h5>{x}</h5>
+        })}
+
+      </Nav>
     </Container>
   );
 };
 
-export default Introduction;
+export default Navbar;

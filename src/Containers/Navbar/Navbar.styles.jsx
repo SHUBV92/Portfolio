@@ -7,11 +7,5 @@ export const Container = styled.div`
     color: white;
 `
 
-export const Frontend = styled.div`
-`
-
-export const Backend = styled.div`
-`
-
-export const OtherSkills = styled.div`
+export const Nav = styled.div`
 `
