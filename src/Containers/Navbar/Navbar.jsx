@@ -4,15 +4,16 @@ import {
   NavDropdown,
   Form,
   FormControl,
-  Button
+  Button,
+  Nav
+
 } from "react-bootstrap";
 
 import {
-  Container,
-  Nav
+  Container
 } from "./Navbar.styles.jsx";
 
-const NavToolBar = () => {
+const NavToolBar = () => (
   // let navRoutes = [
   //   "SUMMARY",
   //   "SKILLS",
@@ -20,11 +21,11 @@ const NavToolBar = () => {
   //   "ARTICLES",
   //   "GET IN TOUCH"
   // ];
-  return (
-    <div>
+
+    <Container>
       <Navbar bg="light" expand="lg">
         <Navbar.Brand href="#home">
-          React-Bootstrap
+        Shubinder Virk
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -62,8 +63,8 @@ const NavToolBar = () => {
           </Form>
         </Navbar.Collapse>
       </Navbar>
-    </div>
-  );
-};
+    </Container>
+
+);
 
 export default NavToolBar;

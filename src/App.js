@@ -6,6 +6,9 @@ import Introduction from './Containers/Intro/Intro';
 import Projects from './Containers/Projects/Projects';
 import NavToolBar from './Containers/Navbar/Navbar.jsx';
 import Test from './Containers/Test.jsx';
+import MyComponent from './Containers/Paralaxax';
+import ParallaxDesign from './Containers/ParallaxDesign/ParallaxDesign';
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 
 
@@ -13,11 +16,15 @@ import Test from './Containers/Test.jsx';
 function App() {
   return (
     <div className="App">
+      <ParallaxProvider>
       <NavToolBar />
       <Introduction />
       <Skills />
       <Projects />
       <Test />
+      <MyComponent />
+      <ParallaxDesign />
+    </ParallaxProvider>
     </div>
   );
 }

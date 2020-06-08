@@ -3,56 +3,63 @@ import { Parallax, Background } from 'react-parallax';
 
 const MyComponent = () => (
     <div>
-        {/* -----basic config-----*/}
+        {/* -----basic config-----
         <Parallax
             blur={10}
-            bgImage={require('path/to/image.jpg')}
+            bgImage={require('../pics/Courage.jpg')}
             bgImageAlt="the cat"
             strength={200}
         >
-            Put some text content here - even an empty div with fixed dimensions to have a height
-            for the parallax.
-            <div style={{ height: '200px' }} />
+            My Name is shubinder and I have recently completed Makers Academy
+            <div></div>
+            <div style={{ height: '400px' }} />
         </Parallax>
+ */}
 
-        {/* -----dynamic blur-----*/}
+        -----dynamic blur-----
         <Parallax
-            blur={{ min: -15, max: 15 }}
-            bgImage={require('path/to/another/image.jpg')}
+            blur={{ min: -50, max: 160 }}
+            bgImage={require('../pics/Luffy.jpg')}
             bgImageAlt="the dog"
             strength={-200}
         >
             Blur transition from min to max
-            <div style={{ height: '200px' }} />
+            <div style={{ height: '600px' }} />
         </Parallax>
 
-        {/* -----custom background element-----*/}
-        <Parallax strength={300}>
-            <div>Use the background component for custom elements</div>
-            <Background className="custom-bg">
-                <img src="http://www.fillmurray.com/500/320" alt="fill murray" />
-            </Background>
-        </Parallax>
-
-        {/* -----renderProp: "renderLayer"-----*/}
+ {/* -----renderProp: "renderLayer"-----*/}
+        <Background>
         <Parallax
-            bgImage={'/path/to/another/image'}
+            bgImage={require('../pics/TheSquad.jpg')}
             strength={400}
             renderLayer={percentage => (
                 <div
                     style={{
-                        position: 'absolute',
+                        position: 'sticky',
                         background: `rgba(255, 125, 0, ${percentage * 1})`,
                         left: '50%',
-                        top: '50%',
-                        width: percentage * 500,
-                        height: percentage * 500,
+                        top:  '50%',
+                        width: percentage * 1200,
+                        height: percentage * 1200
                     }}
                 />
             )}
         >
-            <p>... Content</p>
+            <p>... Content Shubinder Hain Mera Naam</p>
         </Parallax>
+
+        <Parallax
+            blur={{ min: -50, max: 160 }}
+            bgImage={require('../pics/Luffy.jpg')}
+            bgImageAlt="the dog"
+            strength={-200}
+        >
+            Blur transition from min to max
+            <div style={{ height: '600px' }} />
+        </Parallax>
+
+        </Background>
+
     </div>
 );
 export default MyComponent;
