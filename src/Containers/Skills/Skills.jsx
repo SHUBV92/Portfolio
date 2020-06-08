@@ -6,8 +6,6 @@ import {Container, Frontend, Backend, OtherSkills} from "./Skills.styles.jsx"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faShoppingCart,
-  faFacebookF,
-  faMenorah
 } from "@fortawesome/free-solid-svg-icons";
 
 const Skills =()=>{
@@ -17,9 +15,12 @@ const Skills =()=>{
                 <h1>Skills</h1>
                 <Frontend>
                     <ul>
-                        <li>JavaScript</li>
+                        <li>Node.js</li>
+                        <FontAwesomeIcon icon={faShoppingCart}/>
                         <li>React</li>
+
                         <li>HTML5</li>
+                        <FontAwesomeIcon icon={faShoppingCart}/>
                         <li>CSS</li>
                     </ul>
                 </Frontend>

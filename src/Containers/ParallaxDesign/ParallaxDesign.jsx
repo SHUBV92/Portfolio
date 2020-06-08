@@ -19,7 +19,7 @@ const ParallaxDesign = () => (
       className="your-class"
       layers={[
         {
-          image: "https://foo.com/foo.jpg",
+          image: "../../pics/FireKaioku.png",
           amount: 0.1
         },
         {
