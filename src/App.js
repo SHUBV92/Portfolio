@@ -14,6 +14,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import Contact from "./Containers/Contact/Contact";
 
 function App() {
   return (
@@ -46,6 +47,8 @@ function App() {
             <Route path="/">
               <ParallaxDesign />
             </Route>
+
+            <Contact />
 
           </ParallaxProvider>
         </Switch>
