@@ -64,7 +64,6 @@ const NavToolBar = () => (
         </Navbar.Collapse>
       </Navbar>
     </Container>
-
 );
 
 export default NavToolBar;
