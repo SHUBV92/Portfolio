@@ -4,6 +4,8 @@ import './App.css';
 import Skills from './Containers/Skills/Skills';
 import Introduction from './Containers/Intro/Intro';
 import Projects from './Containers/Projects/Projects';
+import NavToolBar from './Containers/Navbar/Navbar.jsx';
+import Test from './Containers/Test.jsx';
 
 
 
@@ -11,9 +13,11 @@ import Projects from './Containers/Projects/Projects';
 function App() {
   return (
     <div className="App">
+      <NavToolBar />
       <Introduction />
       <Skills />
       <Projects />
+      <Test />
     </div>
   );
 }
