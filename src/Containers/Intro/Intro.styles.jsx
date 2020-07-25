@@ -10,4 +10,5 @@ export const Container = styled.div`
 export const Intro = styled.div`
     background-color: purple;
     color: white;
+    height: 400px;
     `

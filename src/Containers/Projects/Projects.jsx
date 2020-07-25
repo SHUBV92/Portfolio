@@ -5,12 +5,12 @@ import {
   Work
 } from "./Projects.styles.jsx";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faShoppingCart,
-  faFacebookF,
-  faMenorah
-} from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {
+//   faShoppingCart,
+//   faFacebookF,
+//   faMenorah
+// } from "@fortawesome/free-solid-svg-icons";
 
 const Projects = () => {
   return (

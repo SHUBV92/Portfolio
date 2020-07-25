@@ -3,10 +3,10 @@ import React from "react"
 import {Container, Frontend, Backend, OtherSkills} from "./Skills.styles.jsx"
 
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faShoppingCart,
-} from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {
+//   faShoppingCart,
+// } from "@fortawesome/free-solid-svg-icons";
 
 const Skills =()=>{
 
@@ -16,11 +16,11 @@ const Skills =()=>{
                 <Frontend>
                     <ul>
                         <li>Node.js</li>
-                        <FontAwesomeIcon icon={faShoppingCart}/>
+                        {/* <FontAwesomeIcon icon={faShoppingCart}/> */}
                         <li>React</li>
 
                         <li>HTML5</li>
-                        <FontAwesomeIcon icon={faShoppingCart}/>
+                        {/* <FontAwesomeIcon icon={faShoppingCart}/> */}
                         <li>CSS</li>
                     </ul>
                 </Frontend>
